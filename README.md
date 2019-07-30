@@ -19,7 +19,7 @@ Get | Existe en jboss5 | Obtener listado de provincias | -
 Get | Existe en jboss5 | Obtener listado de partidos | -
 Get | Existe en jboss5 | Obtener listado de localidades | -
 Get | No existe | Obtener listado de sexos | -
-Get | Existe en jboss5 pero no en base de datos | Obtener listado de tipos de documentos | -
+Get | Existe en jboss5 pero el servicio está hardcodeado | Obtener listado de tipos de documentos | -
 Get | Existe en jboss5 | Obtener listado de idiomas seleccionables | -
 Post | Existe en jboss5 pero ver ref2 | Guardar provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | -
 
@@ -35,7 +35,7 @@ Post | Existe en jboss5 pero ver ref2 | Guarda los datos de direccion de corresp
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
 Get | Existe en jboss5 | Trae los lugares de atencion con sus datos | -
-Get | No existe, hardcodeado | Trae tipos de lugares | Las opciones hardcodeadas son "consultorio" e "institucion"
+Get | No existe, hardcodeado | Trae tipos de lugares | Las opciones hardcodeadas son "consultorio" e "institucion". No se qué valor les corresponde en la base de datos.
 Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los datos que envia son: tipo de lugar, provincia, partido, localidad, calle, numero, piso, depto, codigo postal, telefono principal y 3 telefonos alternativos opcionales, fecha de habilitacion y 1 o más imagenes que corresponden al certificado de habilitacion | -
 
 ### Datos personales
