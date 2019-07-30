@@ -1,6 +1,6 @@
 # Servicios requeridos para todo esto:
 
-```ref1: todos los que tienen esta referencia usan el mismo servicio para obtener datos, es un servicio que trae un monton de datos que se necesitan en distintas pantallas.```
+```ref1: todos los que tienen esta referencia usan el mismo servicio para obtener datos, es un servicio que trae un monton de datos que se necesitan en distintas pantallas. El unico "problema" es que trae más datos de los que se necesita en cada pantalla. ```
 
 ```ref2: todos los que tienen esta referencia usan el mismo servicio para enviar datos, de hecho todos los post viejos usan este servicio, mandando datos diferentes. No lo probé, pero intuyo que admite datos parciales, es decir, acepta cualquier cosa que le mandes y lo guarda aunque sean cosas de distintas secciones. No se como identifica cada cosa. Los xml del 1 al 5 hacen uso de este servicio, excepto el xml3.```
 
