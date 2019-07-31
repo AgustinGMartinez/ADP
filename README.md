@@ -52,7 +52,8 @@ Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKE
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Get | Existe en jboss5 pero ver ref1 | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email y todos los idiomas del prestador | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado
+Get | Existe en jboss5 pero ver ref1 | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado
+Get | Mockeado, ex JBOSS5 | Traer idiomas que habla el prestador | /svc-smmp-busqueda-prestadores/prestador/$codPres/idiomas-por-prestador
 Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Estado de Trámites
