@@ -6,8 +6,8 @@
 
 ### Acceso web
 
-Tipo | Estado| Funcion | Observaciones | Mockeado
---- | --- | --- | --- | ---
+Tipo | Estado| Funcion | Observaciones
+--- | --- | --- | ---
 Post | No existe | Cambia la contraseña del prestador | Debe recibir y corroborar contraseña actual.
 
 ### Dirección Personal
