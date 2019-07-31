@@ -6,57 +6,56 @@
 
 ### Acceso web
 
-Tipo | Estado| Funcion | Observaciones
---- | --- | --- | ---
+Tipo | Estado| Funcion | Observaciones | Mockeado
+--- | --- | --- | --- | ---
 Post | No existe | Cambia la contraseña del prestador | Debe recibir y corroborar contraseña actual.
 
-### Direccion Personal
+### Dirección Personal
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Get | Existe en jboss5 pero ver ref1 | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | -
-Get | Existe en jboss5 | Obtener listado de provincias | -
-Get | Existe en jboss5 | Obtener listado de partidos | -
-Get | Existe en jboss5 | Obtener listado de localidades | -
+Get | Existe en jboss5 pero ver ref1 | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado
+Get | Existe en EAP, sin regla api | Obtener listado de provincias | /ws.situacion-terapeutica/rest-api/provincias
+Get | Existe en PHP | Obtener listado de partidos/localidades | /prestadores/adp/backend/lista_partidos_barrios.php?provincia={numero}
 Get | No existe | Obtener listado de sexos | -
-Get | Existe en jboss5 pero el servicio está hardcodeado | Obtener listado de tipos de documentos | -
-Get | Existe en jboss5 | Obtener listado de idiomas seleccionables | -
-Post | Existe en jboss5 pero ver ref2 | Guardar provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | -
+Get | Existe en jboss5 pero el servicio está hardcodeado | Obtener listado de tipos de documentos | JBOSS5BACKEND/maestros/datos/tiposdocumentacion
+Get | Existe en jboss5 | Obtener listado de idiomas seleccionables | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/prestador/{prestador}/idiomas-por-prestador
+Post | Existe en jboss5 pero ver ref2 | Guardar provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND/smmp-adp-integration/"
 
-### Direccion Correspondencia
+### Dirección de la Correspondencia
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Get | Existe en jboss5 | Obtiene los datos de direccion de correspondencia del prestador, a saber, provincia, partido, localidad, calle, numero, piso, depto, CP y telefono | -
-Post | Existe en jboss5 pero ver ref2 | Guarda los datos de direccion de correspondencia del prestador, a saber, provincia, partido, localidad, calle, numero, piso, depto, CP y telefono | -
+Get | Existe en jboss5 | Obtiene los datos de direccion de correspondencia del prestador, a saber, provincia, partido, localidad, calle, numero, piso, depto, CP y telefono | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/prestador/{prestador}/dom-corresp
+Post | Existe en jboss5 pero ver ref2 | Guarda los datos de direccion de correspondencia del prestador, a saber, provincia, partido, localidad, calle, numero, piso, depto, CP y telefono | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Lugares de atencion
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Get | Existe en jboss5 | Trae los lugares de atencion con sus datos | -
+Get | Existe en jboss5 | Trae los lugares de atencion con sus datos | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/lugaresDeAtencion/{prestador}
 Get | No existe, hardcodeado | Trae tipos de lugares | Las opciones hardcodeadas son "consultorio" e "institucion". No se qué valor les corresponde en la base de datos.
-Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los datos que envia son: tipo de lugar, provincia, partido, localidad, calle, numero, piso, depto, codigo postal, telefono principal y 3 telefonos alternativos opcionales, fecha de habilitacion y 1 o más imagenes que corresponden al certificado de habilitacion | -
+Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los datos que envia son: tipo de lugar, provincia, partido, localidad, calle, numero, piso, depto, codigo postal, telefono principal y 3 telefonos alternativos opcionales, fecha de habilitacion y 1 o más imagenes que corresponden al certificado de habilitacion | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Datos personales
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Get | Existe en jboss5 pero ver ref1 | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | -
-Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | -
+Get | Existe en jboss5 pero ver ref1 | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado
+Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
-### Direccion Profesionales
+### Datos Profesionales
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Get | Existe en jboss5 pero ver ref1 | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email y todos los idiomas del prestador | -
-Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | -
+Get | Existe en jboss5 pero ver ref1 | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email y todos los idiomas del prestador | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado
+Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Estado de Trámites
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Get | Existe en jboss5 | Trae estado de tramites de prestador | -
+Get | Existe en jboss5 | Trae estado de tramites de prestador | JBOSS5BACKEND/svc-smmp-prestadores-actdat/act-datos-prestadores/consulta/tramites
 
 ### Configuraciones
 
@@ -72,10 +71,10 @@ Post | No existe | Modifica la configuracion anterior | -
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Post | Existe en jboss5 pero ver ref2 | Da de baja el prestador | -
+Post | Existe en jboss5 pero ver ref2 | Da de baja el prestador | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Imagen del prestador
 
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
-Post | Existe en jboss5 pero ver ref2 | Cambia la imagen del prestador a una nueva | -
+Post | Existe en jboss5 pero ver ref2 | Cambia la imagen del prestador a una nueva | JBOSS5BACKEND/smmp-adp-integration/"
