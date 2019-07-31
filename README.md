@@ -15,10 +15,14 @@ Post | No existe | Cambia la contraseña del prestador | Debe recibir y corrobor
 Tipo | Estado| Funcion | Observaciones
 --- | --- | --- | ---
 Get | Existe en jboss5 pero ver ref1 | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado
-Get | Existe en EAP, sin regla api | Obtener listado de provincias | /ws.situacion-terapeutica/rest-api/provincias
-Get | Existe en PHP | Obtener listado de partidos/localidades | /prestadores/adp/backend/lista_partidos_barrios.php?provincia={numero}
+Get | En SGI | Obtener listado de provincias | /ws.gis/api/paises/{codigo_pais}/provincias
+Get | En SGI | Obtener listado de partidos | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos
+Get | En SGI | Obtener listado de localidades | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos/{codigo_partido}/localidades
+Get | En SGI | Obtener listado de barrios | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/localidades/{codigo_localidad}/barrios
 Get | No existe | Obtener listado de sexos | -
 Get | Existe en jboss5 pero el servicio está hardcodeado | Obtener listado de tipos de documentos | JBOSS5BACKEND/maestros/datos/tiposdocumentacion
+Get | Existe en SGI | Validador de telefonos | /ws.telefonos/api/validar
+Get | Existe en SGI | Validador de domicilios | /ws.gis/api/validar.xml
 Get | Existe en jboss5 | Obtener listado de idiomas seleccionables | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/prestador/{prestador}/idiomas-por-prestador
 Post | Existe en jboss5 pero ver ref2 | Guardar provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND/smmp-adp-integration/"
 
