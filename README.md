@@ -61,6 +61,7 @@ Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKE
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
 Get | Existe en jboss5 | Trae estado de tramites de prestador | JBOSS5BACKEND/svc-smmp-prestadores-actdat/act-datos-prestadores/consulta/tramites
+Get | Existe en jboss5 | Trae detalle del tramite del prestador | JBOSS5BACKEND/svc-smmp-prestadores-actdat/act-datos-prestadores/consulta/detalle-tramite
 
 ### Configuraciones
 
