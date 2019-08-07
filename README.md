@@ -1,7 +1,5 @@
 # Servicios requeridos para todo esto:
 
-```ref1: (actualmente en API /V0/prestador/1130/datos-direcciones) todos los que tienen esta referencia usan el mismo servicio para obtener datos, es un servicio que trae un monton de datos que se necesitan en distintas pantallas. El unico "problema" es que trae más datos de los que se necesita en cada pantalla. ```
-
 ```ref2: todos los que tienen esta referencia usan el mismo servicio para enviar datos, de hecho todos los post viejos usan este servicio, mandando datos diferentes. No lo probé, pero intuyo que admite datos parciales, es decir, acepta cualquier cosa que le mandes y lo guarda aunque sean cosas de distintas secciones. No se como identifica cada cosa. Los xml del 1 al 5 hacen uso de este servicio, excepto el xml3.```
 
 ### Acceso web
@@ -14,7 +12,7 @@ Post | No existe | Cambia la contraseña del prestador | Debe recibir y corrobor
 
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
-Get | En API, ex jboss5 pero ver ref1 | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado | /V0/prestador/1130/datos-direcciones
+Get | Migrado | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | - | /V1.0/prestadores/1130?traer-calificaciones=true
 Get | En SGI | Obtener listado de provincias | /ws.gis/api/paises/{codigo_pais}/provincias
 Get | En SGI | Obtener listado de partidos | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos
 Get | En SGI | Obtener listado de localidades | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos/{codigo_partido}/localidades
@@ -45,14 +43,14 @@ Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los dato
 
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
-Get | En API, ex jboss5 pero ver ref1 | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado | /V0/prestador/1130/datos-direcciones
+Get | Migrado | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | - | /V1.0/prestadores/1130?traer-calificaciones=true
 Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Datos Profesionales
 
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
-Get | En API, ex jboss5 pero ver ref1 | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado | /V0/prestador/1130/datos-direcciones
+Get | Migrado | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email | - | /V1.0/prestadores/1130?traer-calificaciones=true
 Get | Mockeado, ex JBOSS5 | Traer idiomas que habla el prestador | /svc-smmp-busqueda-prestadores/prestador/$codPres/idiomas-por-prestador | /v0/prestador/1130/idiomas
 Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
@@ -67,8 +65,8 @@ Get | Existe en jboss5 | Trae detalle del tramite del prestador | JBOSS5BACKEND/
 
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
-Get | Totalmente migrado | Trae si el prestador cumple los requisitos para ser calificado | -
-Get | Totalmente migrado | Trae configuracion de si el prestador esta mostrando su calificacion o no | -
+Get | Migrado | Trae si el prestador cumple los requisitos para ser calificado | -
+Get | Migrado | Trae configuracion de si el prestador esta mostrando su calificacion o no | -
 Get/Delete | Totalmente migrado | Da de alta o baja la configuracion de si el prestador muestra o no su calificacion | -
 Get | No existe | Trae configuracion del prestador, a saber: si publica su imagen en cartilla (o no), si usa DrApp (o no), si publica sus idiomas en cartilla (o no) | -
 Post | No existe | Modifica la configuracion anterior | -
