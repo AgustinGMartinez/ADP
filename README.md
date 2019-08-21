@@ -95,7 +95,9 @@ Endpoint con restriccion (que creo que no anda): generarUrl
 ### En react (acceso web es 1 pagina, y las otras dos son 1 sola pagina tambien, 2 total):
 
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_accesoweb.PNG?raw=true)
+--------------------------------
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_datospersonales.PNG?raw=true)
+--------------------------------
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_datosprofesionales.PNG?raw=true)
 
 ***
