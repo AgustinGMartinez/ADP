@@ -13,7 +13,7 @@ Post | No existe | Cambia la contraseña del prestador | Debe recibir y corrobor
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
 Get | Migrado | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
-Get | En SGI | Obtener listado de provincias | /ws.gis/api/paises/{codigo_pais}/provincias
+Get | En SGI | Obtener listado de provincias | /ws.situacion-terapeutica/rest-api/provincias (usa id_presmed) |
 Get | En SGI | Obtener listado de partidos | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos
 Get | En SGI | Obtener listado de localidades | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos/{codigo_partido}/localidades
 Get | En SGI | Obtener listado de barrios | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/localidades/{codigo_localidad}/barrios
