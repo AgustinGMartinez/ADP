@@ -88,11 +88,11 @@ Endpoint con restriccion (que creo que no anda): generarUrl
 
 # Visual: vistas que se corresponden
 
-### En php:
+### En php (1 pagina):
 
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_datospersonales.PNG?raw=true)
 
-### En react (acceso web es una pagina, y las otras dos son una sola pagina tambien):
+### En react (acceso web es 1 pagina, y las otras dos son 1 sola pagina tambien, 2 total):
 
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_accesoweb.PNG?raw=true)
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_datospersonales.PNG?raw=true)
