@@ -12,7 +12,7 @@ Post | No existe | Cambia la contraseña del prestador | Debe recibir y corrobor
 
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
-Get | Migrado | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | - | /V1.0/prestadores/1130?traer-calificaciones=true
+Get | Migrado | Obtener provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
 Get | En SGI | Obtener listado de provincias | /ws.gis/api/paises/{codigo_pais}/provincias
 Get | En SGI | Obtener listado de partidos | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos
 Get | En SGI | Obtener listado de localidades | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos/{codigo_partido}/localidades
@@ -43,14 +43,14 @@ Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los dato
 
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
-Get | Migrado | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | - | /V1.0/prestadores/1130?traer-calificaciones=true
+Get | Migrado | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
 Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Datos Profesionales
 
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
-Get | Migrado | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email | - | /V1.0/prestadores/1130?traer-calificaciones=true
+Get | Migrado | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
 Get | Mockeado, ex JBOSS5 | Traer idiomas que habla el prestador | /svc-smmp-busqueda-prestadores/prestador/$codPres/idiomas-por-prestador | /v0/prestador/1130/idiomas
 Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
