@@ -110,7 +110,7 @@ Endpoint con restriccion (que creo que no anda): generarUrl
 ### En react (las 3 son 1 sola pagina):
 
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_direccionpersonal.PNG?raw=true)
-![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_direccionprofesional.PNG?raw=true)
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_direccioncorrespondencia.PNG?raw=true)
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_lugaresdeatencion.PNG?raw=true)
 
 ***
