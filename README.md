@@ -102,9 +102,11 @@ Endpoint con restriccion (que creo que no anda): generarUrl
 
 ***
 
-### En php (2 paginas):
+### En php (3 paginas):
 
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_domiciliopersonal.PNG?raw=true)
+--------------------------------
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_domiciliocorrespondencia.PNG?raw=true)
 --------------------------------
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_lugaresdeatencion.PNG?raw=true)
 
