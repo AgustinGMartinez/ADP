@@ -84,3 +84,63 @@ Tipo | Estado| Funcion | Observaciones | Api Manager
 Post | Existe en jboss5 pero ver ref2 | Cambia la imagen del prestador a una nueva | JBOSS5BACKEND/smmp-adp-integration/"
 
 Endpoint con restriccion (que creo que no anda): generarUrl
+
+
+# Visual: vistas que se corresponden
+
+### En php:
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_datospersonales.PNG?raw=true)
+
+### En react (acceso web es una pagina, y las otras dos son una sola pagina tambien):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_accesoweb.PNG?raw=true)
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_datospersonales.PNG?raw=true)
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_datosprofesionales.PNG?raw=true)
+
+***
+
+### En php (2 paginas):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_domiciliopersonal.PNG?raw=true)
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_lugaresdeatencion.PNG?raw=true)
+
+### En react (las 3 son 1 sola pagina):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_direccionpersonal.PNG?raw=true)
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_direccionprofesional.PNG?raw=true)
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_lugaresdeatencion.PNG?raw=true)
+
+***
+
+### En php (1 pagina):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_tramites.PNG?raw=true)
+
+### En react (1 pagina):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_tramites.PNG?raw=true)
+
+***
+
+### En php (1 pagina):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_baja.PNG?raw=true)
+
+### En react (1 pagina):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_baja.PNG?raw=true)
+
+***
+
+### En php (1 pagina):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_foto.PNG?raw=true)
+
+### En react (padre de todas las paginas):
+
+![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_perfil.PNG?raw=true)
+
+***
+
+### Todas las demas vistas no tienen correspondiente por ser implementación nueva.
