@@ -105,12 +105,15 @@ Endpoint con restriccion (que creo que no anda): generarUrl
 ### En php (2 paginas):
 
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_domiciliopersonal.PNG?raw=true)
+--------------------------------
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/old_lugaresdeatencion.PNG?raw=true)
 
 ### En react (las 3 son 1 sola pagina):
 
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_direccionpersonal.PNG?raw=true)
+--------------------------------
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_direccioncorrespondencia.PNG?raw=true)
+--------------------------------
 ![alt text](https://github.com/AgustinGMartinez/ADP/blob/master/new_lugaresdeatencion.PNG?raw=true)
 
 ***
