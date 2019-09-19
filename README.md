@@ -4,7 +4,7 @@
 
 ### Pendientes (en orden de prioridadad)
 
-```1``````2```
+```1``` ```2```
 
 ### Acceso web
 
