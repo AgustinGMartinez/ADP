@@ -4,7 +4,7 @@
 
 ### Pendientes (en orden de prioridadad)
 
-```1``` ```2```
+```12``` ```13``` ```15``` ```27``` ```28``` ```32``` ```33``` ```1``` ```16``` ```7```
 
 ### Acceso web
 
@@ -48,7 +48,7 @@ N | Tipo | Estado| Funcion | Observaciones | Api Manager
 ### Datos personales
 
 N | Tipo | Estado| Funcion | Observaciones | Api Manager
---- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | ---
 20 | Get | Migrado | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
 21 | Get | En SGI | Trae tipos de estados civiles | /ws.prestadores/app/main/prestadores/civilestado
 22 | Get | En SGI | Trae tipos de nacioanlidades | /ws.gis/api/nacionalidades
@@ -57,7 +57,7 @@ N | Tipo | Estado| Funcion | Observaciones | Api Manager
 ### Datos Profesionales
 
 N | Tipo | Estado| Funcion | Observaciones | Api Manager
---- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | ---
 24 | Get | Migrado | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
 25 | Get | En SGI | Traer idiomas que habla el prestador | /ws.prestadores/app/main/prestadores/1130/idiomas
 26 | Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
