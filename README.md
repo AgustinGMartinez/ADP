@@ -18,10 +18,10 @@ Get | En SGI | Obtener listado de partidos | /ws.gis/api/paises/{codigo_pais}/pr
 Get | En SGI | Obtener listado de localidades | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/partidos/{codigo_partido}/localidades
 Get | En SGI | Obtener listado de barrios | /ws.gis/api/paises/{codigo_pais}/provincias/{codigo_provincia}/localidades/{codigo_localidad}/barrios
 Get | No existe | Obtener listado de sexos | -
-Get | Mockeado, ex JBOSS5 pero hardcodeado el servicio | Obtener listado de tipos de documentos | JBOSS5BACKEND/maestros/datos/tiposdocumentacion | /v0/maestros/documentos/tipos
-Get | Existe en SGI | Validador de telefonos | /ws.telefonos/api/validar
-Get | Existe en SGI | Validador de domicilios | /ws.gis/api/validar.xml
-Get | Existe en jboss5 | Obtener listado de idiomas seleccionables | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/prestador/{prestador}/idiomas-por-prestador
+Get | En SGI | Obtener listado de tipos de documentos | /ws.prestadores/app/main/prestadores/tipodocumento
+Get | En SGI | Validador de telefonos | /ws.telefonos/api/validar
+Get | En SGI | Validador de domicilios | /ws.gis/api/validar.xml
+Get | En SGI | Obtener listado de idiomas seleccionables | /ws.prestadores/app/main/prestadores/idiomas
 Post | Existe en jboss5 pero ver ref2 | Guardar provincia, partido, localidad, calle, numero, piso, depto, CP y telefono **PERSONALES** del prestador | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Dirección de la Correspondencia
@@ -37,6 +37,8 @@ Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
 Get | Existe en jboss5 | Trae los lugares de atencion con sus datos | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/lugaresDeAtencion/{prestador}
 Get | No existe, hardcodeado | Trae tipos de lugares | Las opciones hardcodeadas son "consultorio" e "institucion". No se qué valor les corresponde en la base de datos.
+Get | En SGI | Trae horarios del lugar |  | Pedir a wally
+Get | En SGI | Trae telefonos del lugar |  | Pedir a wally
 Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los datos que envia son: tipo de lugar, provincia, partido, localidad, calle, numero, piso, depto, codigo postal, telefono principal y 3 telefonos alternativos opcionales, fecha de habilitacion y 1 o más imagenes que corresponden al certificado de habilitacion | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Datos personales
@@ -44,6 +46,8 @@ Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los dato
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
 Get | Migrado | Traer datos **personales** del prestador, a saber: nombre, apellido, fecha de nacimiento, tipo y numero de documento, estado civil, sexo, nacionalidad, telefono celular. | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
+Get | En SGI | Trae tipos de estados civiles | /ws.prestadores/app/main/prestadores/civilestado
+Get | En SGI | Trae tipos de nacioanlidades | /ws.gis/api/nacionalidades
 Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Datos Profesionales
@@ -51,7 +55,7 @@ Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKE
 Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | ---
 Get | Migrado | Traer datos **profesionales** del prestador, a saber: matricula nacional y provincial, provincia, email | JBOSS5BACKEND."/svc-smmp-busqueda-prestadores/medicoAsistencial/{prestador}/normalizado" | /V1.0/prestadores/1130?traer-calificaciones=true
-Get | Mockeado, ex JBOSS5 | Traer idiomas que habla el prestador | /svc-smmp-busqueda-prestadores/prestador/$codPres/idiomas-por-prestador | /v0/prestador/1130/idiomas
+Get | En SGI | Traer idiomas que habla el prestador | /ws.prestadores/app/main/prestadores/1130/idiomas
 Post | Existe en jboss5 pero ver ref2 | guarda los datos de arriba | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Estado de Trámites
