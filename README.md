@@ -4,13 +4,13 @@
 
 ### Pendientes (en orden de prioridadad)
 
-```12``` ```13``` ```15``` ```27``` ```28``` ```32``` ```33``` ```1``` ```16``` ```7```
+```12``` ```13``` ```27``` ```28``` ```32``` ```33``` ```1``` ```16``` ```7```
 
 ### Acceso web
 
 N | Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | --- | ---
-1 | Post | No existe | Cambia la contraseña del prestador | Debe recibir y corroborar contraseña actual.
+1 | Post | Nuevo requerimiento | Cambia la contraseña del prestador | Debe recibir y corroborar contraseña actual.
 
 ### Dirección Personal
 
@@ -39,10 +39,10 @@ N | Tipo | Estado| Funcion | Observaciones | Api Manager
 
 N | Tipo | Estado| Funcion | Observaciones | Api Manager
 --- | --- | --- | --- | --- | ---
-15 | Get | Existe en jboss5 | Trae los lugares de atencion con sus datos | JBOSS5BACKEND/svc-smmp-busqueda-prestadores/medicoAsistencial/lugaresDeAtencion/{prestador}
+15 | Get | En SGI | Trae los lugares de atencion con sus datos | /ws.prestadores/app/main/prestadores/getAttentionPlaces/0/1130/20190821
 16 | Get | No existe, hardcodeado | Trae tipos de lugares | Las opciones hardcodeadas son "consultorio" e "institucion". No se qué valor les corresponde en la base de datos.
-17 | Get | En SGI | Trae horarios del lugar |  | Pedir a wally
-18 | Get | En SGI | Trae telefonos del lugar |  | Pedir a wally
+17 | Get | En SGI | Trae horarios del lugar | /ws.prestadores/app/main/prestadores/getAttentionPlaces/0/1130/20190821 | 
+18 | Get | En SGI | Trae telefonos del lugar | /ws.prestadores/app/main/prestadores/getAttentionPlaces/0/1130/20190821 | 
 19 | Post | Existe en jboss5 pero ver ref2 | guarda nuevo lugar de atencion, los datos que envia son: tipo de lugar, provincia, partido, localidad, calle, numero, piso, depto, codigo postal, telefono principal y 3 telefonos alternativos opcionales, fecha de habilitacion y 1 o más imagenes que corresponden al certificado de habilitacion | JBOSS5BACKEND/smmp-adp-integration/"
 
 ### Datos personales
@@ -76,8 +76,8 @@ N | Tipo | Estado| Funcion | Observaciones | Api Manager
 29 | Get | Migrado | Trae si el prestador cumple los requisitos para ser calificado | -
 30 | Get | Migrado | Trae configuracion de si el prestador esta mostrando su calificacion o no | -
 31 | Get/Delete | Totalmente migrado | Da de alta o baja la configuracion de si el prestador muestra o no su calificacion | -
-32 | Get | No existe | Trae configuracion del prestador, a saber: si publica su imagen en cartilla (o no), si usa DrApp (o no), si publica sus idiomas en cartilla (o no) | -
-33 | Post | No existe | Modifica la configuracion anterior | -
+32 | Get | Nuevo requerimiento | Trae configuracion del prestador, a saber: si publica su imagen en cartilla (o no), si usa DrApp (o no), si publica sus idiomas en cartilla (o no) | -
+33 | Post | Nuevo requerimiento | Modifica la configuracion anterior | -
 
 ### Baja del prestador
 
